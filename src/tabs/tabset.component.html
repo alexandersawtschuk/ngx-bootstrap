@@ -1,4 +1,4 @@
-<ul class="nav" [ngClass]="classMap" (click)="$event.preventDefault()">
+<ul class="nav col-3" [ngClass]="classMap" (click)="$event.preventDefault()">
   <li *ngFor="let tabz of tabs" [ngClass]="['nav-item', tabz.customClass || '']"
       [class.active]="tabz.active" [class.disabled]="tabz.disabled">
     <a href="javascript:void(0);" class="nav-link"
@@ -10,6 +10,6 @@
     </a>
   </li>
 </ul>
-<div class="tab-content">
+<div class="tab-content col-9">
   <ng-content></ng-content>
 </div>
